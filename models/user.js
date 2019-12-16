@@ -104,9 +104,9 @@ return db.collection('users').updateOne({_id:mongodb.ObjectID(this._id)},{$set:{
 
     getOrders(){
       let db=getdb()
-     return db.collection('orders').find({'user._id':mongodb.ObjectID(this._id)}).toArray().then(re=>{
+     return db.collection('orders').find({'user._id':mongodb.ObjectID(this._id)}).toArray().then(result=>{
        
-       return re;
+       return result;
      })
     }
 
