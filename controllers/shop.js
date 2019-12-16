@@ -92,7 +92,7 @@ exports.postCart = (req, res, next) => {
   
  }).then(()=>{
    
-   console.log('success')
+   console.log('success happened')
 
    res.redirect('/') 
    })
